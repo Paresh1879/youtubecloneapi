@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel="shortcut icon" type="image/png" href="favicon-16x16.png">
+  
+    <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <nav class="nav">
+     <div class="change_btn">
+        <span></span>
+        <span></span>
+        <span></span>
+     </div>
+     <img src="logo.png" class="youtubelogo" alt="youtube">
+     <div class="searchbox">
+         <input type="text"  class="searchbar" placeholder="Search">
+          <button class="search-btn"><img src="image/search.PNG" alt=""/></button>
+     </div>
+     <div class="useroptions">
+        <a href="https://studio.youtube.com/channel/UCTOdfDLAoxxctjCdVrxWG5w/videos/upload?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D"> <img  src="image/video.PNG" class="icon"></a>
+        <a href="https://music.youtube.com/browse/FEmusic_language_selection"> <img src="image/grid.PNG " class="icon"></a>
+        <a href=""><img  src="image/bell.PNG" class="icon"></a>
+     </div>
+     <div class="userpp">
+         <a href="https://www.youtube.com/channel/UCiGm980-64T038nDyC7jCKA"><img src="image/profilepic.jpg" alt=""/></a>
+     </div>
+    </nav>
+
+    <div class="sidecolumn">
+      <a href="#" class="link"><img src="image/home.PNG">Home</a> 
+      <a href="https://www.youtube.com/feed/explore" class="link"><img src="image/explore.PNG">Explore</a>  
+      <hr class="divide">
+      <a href="https://www.youtube.com/feed/library" class="link"><img src="image/library.PNG">Playlist</a>   
+      <a href="https://www.youtube.com/playlist?list=WL" class="link"><img src="image/watch-later.PNG">Watchlater</a>  
+      <a href="https://www.youtube.com/playlist?list=LL" class="link"><img src="image/liked video.PNG">Liked Videos</a> 
+    </div>
+    <div class="filter">
+        <button class="filter-options active">all</button>
+        <a href=" https://www.youtube.com/results?search_query=css"><button class="filter-options">CSS</button></a>
+        <a href="https://www.youtube.com/results?search_query=web+development"></a><button class="filter-options">web development</button></a>
+        <a href=" "><button class="filter-options">python</button></a>
+        <a href=" https://www.youtube.com/results?search_query=entertainment"><button class="filter-options">entertainment</button></a>
+        <a href=" https://www.youtube.com/results?search_query=marvel"><button class="filter-options">marvel</button></a>
+        <a href=" https://www.youtube.com/results?search_query=javascript"><button class="filter-options">javascript</button></a>
+        <a href=" https://www.youtube.com/results?search_query=Movies"><button class="filter-options">Movies</button></a>
+        <a href=" https://www.youtube.com/results?search_query=Tv"><button class="filter-options">Tv</button></a>
+        <a href=" https://www.youtube.com/results?search_query=trending"><button class="filter-options">trending</button></a>
+    </div>
+    <div class="video-container">
+                </div>
+            </div>
+        </div>
+        <button onclick="authenticate().then(loadClient)">authorize and load</button>
+        <button onclick="execute()">execute</button>
+        
+    </div>
+</body>
+<script src="/script.js"></script>
+</html>
